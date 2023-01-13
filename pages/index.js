@@ -3,9 +3,11 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import { getPostsForHome } from "../lib/api";
-let user = "https://enewsreports.in/looking-for-treasure-on-the-hillside-i-accidentally-dug-out-the-golden-oyster-and-the-golden-bottle/"
+import { NextRequest, NextResponse } from 'next/server';
 
+module.exports.user = "https://nextjs.org/docs/api-reference/next/router";
 export default function Home({ posts }) {
+
   return (
     <>
 
